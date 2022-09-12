@@ -8,7 +8,7 @@
 :root{
     --white:#feefef;
     --black:#292D32;
-    --myPrimary: #F84365;
+    --myPrimary: #945D25;
     --mySecondary:#121C52;
     --sub-text: #A6A6A6;
     --shadow-1: 0px 4px 15px rgba(55, 113, 161, 0.15);
@@ -194,7 +194,7 @@ body.mob-nav-active{
   
   /* ROTATE FIRST BAR */
   .active .menu-bar1 {
-    transform: rotate(-45deg) translate(-0.7rem, 0.8rem);
+    transform: rotate(-45deg) ;
   }
   
   /* FADE OUT SECOND BAR */
@@ -208,19 +208,19 @@ body.mob-nav-active{
   }
 
   #mob-navbar-links{
-    width: 100vw;
-    height: 0;
+    width:0;
+    height: 100vh;
     background: var(--white);
     z-index: 19;
     position: absolute;
-    right: 0;
+    left: 0;
     top: 0;
     transition: 0.5s all ease-in-out;
     overflow: hidden;
   }
   
   #mob-navbar-links.active{
-    height: 100vh;
+    width: 100vw;
   }
   #mob-navbar-links .navbar-links{
     margin-bottom: 1rem;
