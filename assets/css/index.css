@@ -27,6 +27,7 @@
 
 a{
     text-decoration: none!important;
+    transition: 0.3s all ease-in-out;
 }
 
 
@@ -36,14 +37,8 @@ a{
 }
 ::-webkit-scrollbar-thumb{
     background-color: var(--myPrimary);
-    border-radius: 10px;
 }
 
-/* 
-
-font-family: 'Poppins', sans-serif;
-
-*/
 
 body{
     overflow-x: hidden;
@@ -115,6 +110,10 @@ body{
 
 .navbar-contacts a{
     color: var(--white);
+}
+.navbar-contacts a:hover{
+    color: var(--white);
+    font-weight: 700;
 }
 .mob-navbar-links a{
     color: var(--black);
@@ -325,15 +324,22 @@ h1.name span{
     background-color: var(--mySecondary);
 }
 
-p.heading{
+.heading{
     color: var(--white);
     font-size: 1.8rem;
 }
 .sub-text{
     color: #A7ADC3;
 }
-
-
+.color-primary{
+    color: var(--myPrimary);
+}
+.color-black{
+    color: var(--black);
+}
+#section-4{
+    background-color: var(--mySecondary);
+}
 @keyframes float{
     0%{
         transform: translateY(10px);
