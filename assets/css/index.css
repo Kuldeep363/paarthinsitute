@@ -156,18 +156,27 @@ body.mob-nav-active{
 
 
 
-.primary-btn, .stroke-btn{
+.primary-btn, .stroke-btn,.secondary-btn{
     padding: 10px 25px;
     transition: 0.3s all ease-in-out;
 }
 .primary-btn{
-    /* box-shadow: var(--shadow-2); */
-    background: var(--mySecondary);
+    background: transparent;
+    color: var(--mySecondary);
+    border: 1px solid var(--mySecondary);
+}
+.secondary-btn{
+    background: var(--myPrimary);
     color: var(--white);
-
+    border: 1px solid var(--myPrimary);
+}
+.secondary-btn:hover{
+    background: transparent;
+    color: var(--myPrimary);
 }
 .primary-btn:hover{
-    box-shadow: var(--shadow-1);
+    background: var(--mySecondary);
+    color: var(--white);
 }
 .stroke-btn{
     color: var(--myPrimary);
@@ -263,17 +272,17 @@ body.mob-nav-active{
 
 
 /* home */
-#hero-section{
-    height: 90vh;
-    background: url('../images/bkg-1.png') no-repeat center center;
+#hero{
+    height: 800px;
+    background: url('../images/hero-bkg.png') no-repeat center center;
     background-size: cover;
-    background-position: bottom;
+    /* background-position: bottom; */
 }
 
-.hero-sec-1 h1{
-    font-size: 5rem;
+#hero h1{
+    font-size: 3rem;
     font-weight: 900;
-    color: var(--black);
+    color: var(--white);
 }
 h1.name span{
     background-color: var(--myPrimary);
@@ -282,12 +291,12 @@ h1.name span{
     border-radius: 20px;
 }
 
-.hero-sec-1 .sub-text{
-    color: var(--sub-text);
+#hero .sub-text{
+    color: var(--white);
     font-size: 18px;
 }
 
-.hero-sec-1 .arrow{
+#hero .arrow{
     position: absolute;
 }
 .float-animation{
@@ -308,6 +317,20 @@ h1.name span{
     -webkit-animation-delay: 2s;
     -moz-animation-delay: 2s;
     -o-animation-delay: 2s;
+}
+
+
+#section-2{
+    padding: 35px 0;
+    background-color: var(--mySecondary);
+}
+
+p.heading{
+    color: var(--white);
+    font-size: 1.8rem;
+}
+.sub-text{
+    color: #A7ADC3;
 }
 
 
@@ -337,13 +360,13 @@ h1.name span{
     #links{
         display: none;
     }
-    .hero-sec-1 h1{
+    #hero h1{
         font-size: 4rem;
     }
 }
 
 @media(max-width:767px){
-    .hero-sec-1 h1{
+    #hero h1{
         font-size: 3rem;
     }
     h1.name span{
@@ -351,15 +374,15 @@ h1.name span{
     }
 }
 @media(max-width:575px){
-    .hero-sec-1 h1{
+    #hero h1{
         font-size: 2.5rem;
     }
-    .hero-sec-1 .sub-text{
+    #hero .sub-text{
         font-size: 14px;
     }
 }
 @media(max-width:344px){
-    .hero-sec-1 h1{
+    #hero h1{
         font-size: 2rem;
     }
 }
