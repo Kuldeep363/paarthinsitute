@@ -176,6 +176,7 @@ body.mob-nav-active{
 .whatsapp-btn{
     background: #fefefe;
     color: var(--black);
+    display: flex;
 }
 .primary-btn:hover{
     background: var(--mySecondary);
@@ -341,6 +342,9 @@ h1.name span{
 .color-black{
     color: var(--black);
 }
+.color-white{
+    color: var(--white);
+}
 #section-4{
     background-color: var(--mySecondary);
 }
@@ -381,6 +385,7 @@ h1.name span{
 .service{
     position: relative;
     overflow: hidden;
+    margin-top: 10px;
 }
 .service .img{
     background-color: var(--black);
@@ -404,7 +409,7 @@ h1.name span{
 .service .know-more-btn{
     position: absolute;
     left: 50%;
-    bottom: -50px;
+    bottom: -75px;
     transform: translateX(-50%);
     transition: 0.3s all ease-in-out;
 }
@@ -422,9 +427,9 @@ h1.name span{
   
   /* Create four equal columns that sits next to each other */
   .gallery-col {
-    -ms-flex: 33.33%; /* IE10 */
-    flex: 33.33%;
-    max-width: 33.33%;
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
     padding: 5px;
   }
   
@@ -432,6 +437,15 @@ h1.name span{
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
+  }
+  #section-8{
+    background-color: var(--mySecondary);
+  }
+
+  #join{
+    background: url('../images/hero-bkg.png') center center no-repeat;
+    background-size: cover;
+    padding: 25px 0
   }
 
 @keyframes float{
@@ -484,9 +498,9 @@ h1.name span{
         font-size: 14px;
     }
     .gallery-col {
-        -ms-flex: 100%;
-        flex: 100%;
-        max-width: 100%;
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
       }
 }
 @media(max-width:344px){
