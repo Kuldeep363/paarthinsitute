@@ -155,7 +155,7 @@ body.mob-nav-active{
 
 
 
-.primary-btn, .stroke-btn,.secondary-btn{
+.primary-btn, .stroke-btn,.secondary-btn,.whatsapp-btn{
     padding: 10px 25px;
     transition: 0.3s all ease-in-out;
 }
@@ -172,6 +172,10 @@ body.mob-nav-active{
 .secondary-btn:hover{
     background: transparent;
     color: var(--myPrimary);
+}
+.whatsapp-btn{
+    background: #fefefe;
+    color: var(--black);
 }
 .primary-btn:hover{
     background: var(--mySecondary);
@@ -319,7 +323,7 @@ h1.name span{
 }
 
 
-#section-2{
+#section-2,#section-6 .myContainer{
     padding: 35px 0;
     background-color: var(--mySecondary);
 }
@@ -369,6 +373,67 @@ h1.name span{
 .range-4 .range::after{
     width: 20%;
 }
+#section-5{
+    background-color: #F8F8F9;
+    padding: 75px 0;
+}
+
+.service{
+    position: relative;
+    overflow: hidden;
+}
+.service .img{
+    background-color: var(--black);
+}
+
+.service:hover .img img{
+    transform: scale(1.1);
+    opacity: 0.5;
+}
+.service .img img{
+    transition: 0.3s all ease-in-out;
+    width: 100%;
+}
+.ser-name{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+    color: var(--white);
+}
+.service .know-more-btn{
+    position: absolute;
+    left: 50%;
+    bottom: -50px;
+    transform: translateX(-50%);
+    transition: 0.3s all ease-in-out;
+}
+.service:hover .know-more-btn{
+    bottom: 10px;
+}
+
+.gallery-row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    /* padding: 0 4px; */
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .gallery-col {
+    -ms-flex: 33.33%; /* IE10 */
+    flex: 33.33%;
+    max-width: 33.33%;
+    padding: 5px;
+  }
+  
+  .gallery-col img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+
 @keyframes float{
     0%{
         transform: translateY(10px);
@@ -398,6 +463,9 @@ h1.name span{
     #hero h1{
         font-size: 4rem;
     }
+    #section-5 .myContainer .row:nth-child(1) .col-12:nth-child(3){
+        justify-content: start!important;
+    }
 }
 
 @media(max-width:767px){
@@ -415,6 +483,11 @@ h1.name span{
     #hero .sub-text{
         font-size: 14px;
     }
+    .gallery-col {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+      }
 }
 @media(max-width:344px){
     #hero h1{
