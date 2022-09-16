@@ -134,10 +134,10 @@ body.mob-nav-active{
     color: var(--black);
     transition: 0.3s all ease-in-out;
 }
-#nav-links a,#mob-navbar-links a{
+#nav-links a,#mob-navbar-links a, .footer-links a{
     position: relative;
 }
-#nav-links a::before, #mob-navbar-links a::before{
+#nav-links a::before, #mob-navbar-links a::before, .footer-links a::before{
     content: '';
     position: absolute;
     bottom: -3px;
@@ -148,7 +148,7 @@ body.mob-nav-active{
     background-color: var(--myPrimary);
     transition: 0.3s all ease-in-out;
 }
-#nav-links a:hover::before, #mob-navbar-links a:hover::before, #nav-links a.active::before, #mob-navbar-links a.active::before{
+#nav-links a:hover::before, #mob-navbar-links a:hover::before, #nav-links a.active::before, #mob-navbar-links a.active::before, .footer-links a:hover::before{
     width: 100%;
 }
 
@@ -447,7 +447,16 @@ h1.name span{
     background-size: cover;
     padding: 25px 0
   }
-
+.footer-links a:hover{
+    color: white;
+}
+.footer-contact a:hover{
+    color: var(--white);
+}
+#copyright{
+    padding: 10px 0;
+    background-color: var(--myPrimary);
+}
 @keyframes float{
     0%{
         transform: translateY(10px);
