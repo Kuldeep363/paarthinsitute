@@ -1,10 +1,8 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap'); */
-
 @font-face {
     font-family: kuldeep363;
     src: url('kuldeep.ttf');
 }
- 
+  
 :root{
     --white:#feefef;
     --black:#292D32;
@@ -23,6 +21,9 @@
     font-family: kuldeep363;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 
 
 a{
@@ -277,7 +278,8 @@ body.mob-nav-active{
 
 /* home */
 #hero{
-    height: 800px;
+    /* height: 750px; */
+    padding: 100px 0;
     background: url('../images/hero-bkg.png') no-repeat center center;
     background-size: cover;
     /* background-position: bottom; */
@@ -322,7 +324,10 @@ h1.name span{
     -moz-animation-delay: 2s;
     -o-animation-delay: 2s;
 }
-
+.swiper {
+    width: 90%;
+    /* height: 300px; */
+  }
 
 #section-2,#section-6 .myContainer{
     padding: 35px 0;
@@ -377,7 +382,7 @@ h1.name span{
 .range-4 .range::after{
     width: 20%;
 }
-#section-5{
+#courses{
     background-color: #F8F8F9;
     padding: 75px 0;
 }
@@ -454,8 +459,16 @@ h1.name span{
     color: var(--white);
 }
 #copyright{
-    padding: 10px 0;
+    padding: 5px 0;
     background-color: var(--myPrimary);
+}
+#copyright a{
+    color: var(--white);
+    text-decoration: underline!important;
+}
+#copyright a:hover{
+    letter-spacing: 1px;
+    color: var(--white);
 }
 @keyframes float{
     0%{
@@ -486,7 +499,7 @@ h1.name span{
     #hero h1{
         font-size: 4rem;
     }
-    #section-5 .myContainer .row:nth-child(1) .col-12:nth-child(3){
+    #courses .myContainer .row:nth-child(1) .col-12:nth-child(3){
         justify-content: start!important;
     }
 }
