@@ -264,7 +264,7 @@
                     </div>
                 </div>
     
-                <div class="circle-blue" style="top: 5%;"></div>
+                <div class="circle-blue" style="top: 5%;z-index: -20;"></div>
     
             </div>
         </div>
@@ -872,9 +872,10 @@
         document.getElementById('mob-navbar-links').classList.toggle('active')
         document.getElementById('navbars').classList.toggle('active')
         })
-        let links = document.querySelectorAll('#mobile-navbar .navbar-links a')
+        let links = document.querySelectorAll('#mob-navbar-links a')
         for(let i=0;i<links.length;i++){
             links[i].addEventListener('click',()=>{
+                console.log('p')
                 document.querySelector('body').classList.toggle('mob-nav-active')
                 document.getElementById('hamburger-menu').classList.toggle('active')
                 document.getElementById('mob-navbar-links').classList.toggle('active')
