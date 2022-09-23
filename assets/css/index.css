@@ -187,6 +187,7 @@ body.mob-nav-active{
     background: #fefefe;
     color: var(--black);
     display: flex;
+    width: 160px;
 }
 .primary-btn:hover{
     background: var(--mySecondary);
@@ -308,8 +309,9 @@ body.mob-nav-active{
     color: var(--white);
     width: 100vw;
     z-index: 99;
-    background: url('../images/addmission-bkg.png') center center no-repeat;
-    background-size: cover;
+    /* background: url('../images/addmission-bkg.png') center center no-repeat;
+    background-size: cover; */
+    background-color: #F84365;
 }
 
 /* home */
@@ -415,8 +417,14 @@ h1.name span{
     border-radius: 10px;
     z-index: 2;
 }
+.range-2 .range::after{
+    width: 89%;
+}
+.range-3 .range::after{
+    width: 95%;
+}
 .range-4 .range::after{
-    width: 20%;
+    width: 83%;
 }
 #courses{
     background-color: #F8F8F9;
@@ -470,9 +478,9 @@ h1.name span{
   
   /* Create four equal columns that sits next to each other */
   .gallery-col {
-    -ms-flex: 25%; /* IE10 */
-    flex: 25%;
-    max-width: 25%;
+    -ms-flex: 33.33%; /* IE10 */
+    flex: 33.33%;
+    max-width: 33.33%;
     padding: 5px;
   }
   
@@ -497,6 +505,7 @@ h1.name span{
     color: var(--white);
 }
 #copyright{
+    margin-bottom: 66px;
     padding: 5px 0;
     background-color: var(--myPrimary);
 }
@@ -557,11 +566,6 @@ h1.name span{
     #hero .sub-text{
         font-size: 14px;
     }
-    .gallery-col {
-        -ms-flex: 50%;
-        flex: 50%;
-        max-width: 50%;
-      }
 }
 @media(max-width:344px){
     #hero h1{
